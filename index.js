@@ -20,6 +20,10 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge=18
+if(votingAge>=18){
+  console.log('true');
+}
 
 
 /*
@@ -34,8 +38,11 @@ Do the following:
    HINT: no function required
 */
 
+let firstThing = 6;
+let secondThing= 7;
+console.log(firstThing>secondThing);
 
-
+console.log(firstThing);
 
 
 /*
@@ -49,8 +56,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+let year= '1999';
+year=1999
+console.log(year);
 
 /*
 Task 1d - Multiply
@@ -65,7 +73,7 @@ function multiply(num1, num2){
   return num1 * num2;
 }
 
-
+console.log(multiply(2,5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -77,10 +85,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+let dogYears= function(age){
+  return age * 7;
 }
-
+console.log(dogYears(8));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -129,9 +137,38 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weightPounds, age){
+  if (weightPounds <= 5 && age >= 1){
+    return( 0.05 * weightPounds);}
+    
+    else if ( weightPounds >5 && weightPounds <= 10 && age >=1){
+      return(0.04 *weightPounds );
+    }
+  
+    else if (weightPounds > 10 && weightPounds <= 15 && age >= 1){
+      return (0.03 * weightPounds);
+    }
+    else if( weightPounds >15 && age >=1) {
+      return (0.02 * weightPounds);
+    }
+  else if ( weightPounds = weightPounds && age >0.17 && age <= 0.33){
+    return (0.10 * weightPounds);
 }
+    
+    else if ( weightPounds = weightPounds && age > 0.33 && age <= 0.58){
+      return(0.05 *weightPounds);
+    }
+  
+    else if (weightPounds = weightPounds && age > 0.58 && age <= 1){
+      return (0.05 * weightPounds);
+    }
+  else {console.log('Too Young for Measurement');
+       }
+  }
+
+
+console.log(hungryDog(15,1));
+
 
 
 
@@ -156,9 +193,61 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-function game(user, computer){
-  /*add your code here*/
+const rock= 'rock';
+const paper = 'paper';
+const scissors = 'scissors';
+
+let computer = Math.random()
+              if (computer <= 0.33){
+               computer = 'rock';
+              }
+
+              else if (computer >0.33 & computer <= 0.66){
+                //console.log('Paper');
+                computer = 'paper';
+              }
+
+            else if (computer >0.66 && computer <=1){
+              computer = 'scissors';
+                 }
+
+//computer;
+
+
+let game= function (user, computer){
+ 
+//draws 
+  if (computer === user){
+   console.log('Both Chose the Same! It is a draw!');
+  }
+
+      //wins 
+      else if (computer === 'scissors' && user === 'rock'){
+               console.log('You chose rock. Computer chose scissors! You win!');
+               }
+      else if (computer === 'rock' && user === 'paper') {
+               console.log('You chose paper. Computer chose rock! You win!');
+               }
+               
+      else if (computer === 'paper' && user === 'scissors') {
+               console.log('You chose scissor. Computer chose paper! You win!');
+               }
+               
+      //loses 
+               else if (computer === 'paper' && user === 'rock'){
+               console.log('You chose rock. Computer chose paper! You LOSE!');
+               }
+               
+                else if (computer === 'rock' && user === 'scissors') {
+               console.log('You chose scissors. Computer chose rock! You LOSE!');
+               }
+               
+                else if (computer === 'scissors' && user === 'paper'){
+               console.log('You chose paper. Computer chose scissors. You LOSE! ');
+              }
 }
+
+game(scissors, computer);
 
 
 
