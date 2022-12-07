@@ -151,15 +151,15 @@ function hungryDog(weightPounds, age){
     else if( weightPounds >15 && age >=1) {
       return (0.02 * weightPounds);
     }
-  else if ( weightPounds = weightPounds && age >0.17 && age <= 0.33){
+  else if ( weightPounds = weightPounds && age >=0.17 && age <= 0.33){
     return (0.10 * weightPounds);
 }
     
-    else if ( weightPounds = weightPounds && age > 0.33 && age <= 0.58){
+    else if ( weightPounds = weightPounds && age >= 0.33 && age <= 0.58){
       return(0.05 *weightPounds);
     }
   
-    else if (weightPounds = weightPounds && age > 0.58 && age <= 1){
+    else if (weightPounds = weightPounds && age >= 0.58 && age <= 1){
       return (0.05 * weightPounds);
     }
   else {console.log('Too Young for Measurement');
