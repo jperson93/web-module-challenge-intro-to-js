@@ -151,28 +151,23 @@ function hungryDog(weightPounds, age){
     else if( weightPounds >15 && age >=1) {
       return (0.02 * weightPounds);
     }
-  else if ( weightPounds = weightPounds && age >=0.17 && age <= 0.33){
+  else if ( weightPounds === weightPounds && age >= 0.17 && age <0.33){
     return (0.10 * weightPounds);
 }
-    //for puppies 2-4 months 
-
-    else if ( weightPounds = weightPounds && age >= 0.33 && age <= 0.58){
+    
+    else if ( weightPounds === weightPounds && age > 0.33 && age <= 0.58){
       return(0.05 *weightPounds);
     }
-  //for puppies 4-7 months
-    else if (weightPounds = weightPounds && age >= 0.58 && age <= 1){
-      return (0.05 * weightPounds);
+  
+    else if (weightPounds === weightPounds && age > 0.58 && age <= 1){
+      return (0.04 * weightPounds);
     }
-
-    //for puppies 7-12 months 
-    
   else {console.log('Too Young for Measurement');
        }
   }
 
 
-console.log(hungryDog(15,1));
-
+console.log(hungryDog(20,0.45));
 
 
 
@@ -222,36 +217,36 @@ let game= function (user, computer){
  
 //draws 
   if (computer === user){
-   console.log('Both Chose the Same! It is a draw!');
+   console.log('you tie');
   }
 
       //wins 
       else if (computer === 'scissors' && user === 'rock'){
-               console.log('You chose rock. Computer chose scissors! You win!');
+               console.log('You win!');
                }
       else if (computer === 'rock' && user === 'paper') {
-               console.log('You chose paper. Computer chose rock! You win!');
+               console.log('You win!');
                }
                
       else if (computer === 'paper' && user === 'scissors') {
-               console.log('You chose scissor. Computer chose paper! You win!');
+               console.log('You win!');
                }
                
       //loses 
                else if (computer === 'paper' && user === 'rock'){
-               console.log('You chose rock. Computer chose paper! You LOSE!');
+               console.log(' You lose!');
                }
                
                 else if (computer === 'rock' && user === 'scissors') {
-               console.log('You chose scissors. Computer chose rock! You LOSE!');
+               console.log(' You lose!');
                }
                
                 else if (computer === 'scissors' && user === 'paper'){
-               console.log('You chose paper. Computer chose scissors. You LOSE! ');
+               console.log(' You lose!');
               }
 }
 
-game(scissors, computer);
+game(scissors, rock);
 
 
 
