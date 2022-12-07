@@ -154,14 +154,18 @@ function hungryDog(weightPounds, age){
   else if ( weightPounds = weightPounds && age >=0.17 && age <= 0.33){
     return (0.10 * weightPounds);
 }
-    
+    //for puppies 2-4 months 
+
     else if ( weightPounds = weightPounds && age >= 0.33 && age <= 0.58){
       return(0.05 *weightPounds);
     }
-  
+  //for puppies 4-7 months
     else if (weightPounds = weightPounds && age >= 0.58 && age <= 1){
       return (0.05 * weightPounds);
     }
+
+    //for puppies 7-12 months 
+    
   else {console.log('Too Young for Measurement');
        }
   }
