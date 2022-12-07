@@ -299,10 +299,12 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+  
+  console.log(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`);
 }
 
+annoyingSong(99);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -319,9 +321,30 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+let grade = function(score){
+  if (score >= 90 & score <=100){
+    console.log('you got an A');
+  }
+
+ else if (score >= 80 && score <90){
+  console.log('you got a B');
 }
+
+else if( score >= 70 && score <80){
+  console.log('you got a C');
+}
+
+else if (score >= 60 & score <70){
+  console.log('you got a D');
+}
+
+else {console.log('you got an F');
+     }
+}
+      
+grade(55);
+grade(92);
+grade(82);
 
 
 
