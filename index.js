@@ -261,8 +261,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-let miles = function(number){
-  return number * 1.609344;
+let miles = function(km){
+  return km * 0.621371;
 }
 
 console.log(miles(10));
@@ -278,7 +278,7 @@ Using the feet function below do the following:
 */
 
 let feet= function(cm){
-  return cm * 0.0328;
+  return cm / 30.48;
 }
 
 console.log(feet(91.44));
@@ -303,7 +303,7 @@ function annoyingSong(number){
   console.log(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`);
 }
 
-annoyingSong(99);
+annoyingSong(5);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
