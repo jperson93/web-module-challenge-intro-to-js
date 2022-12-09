@@ -299,15 +299,24 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-let number = 'number';
+// let number = 'number';
+
+// function annoyingSong(number){
+//    console.log(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`);
+
+// }
+// for (let i = number; i > 0; i--){
+//   annoyingSong(5);
+// }
 
 function annoyingSong(number){
-   console.log(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`);
+  for (let i=number ; i>0 ; i--){
+  return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i -1} bottles of soda on the wall`
+}
+}
 
-}
-for (let i = number; i > 0; i--){
-  annoyingSong(5);
-}
+console.log(annoyingSong(8));
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
