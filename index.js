@@ -196,7 +196,8 @@ const rock= 'rock';
 const paper = 'paper';
 const scissors = 'scissors';
 
-let computer = Math.random()
+let computer = Math.random();
+
               if (computer <= 0.33){
                computer = 'rock';
               }
@@ -217,36 +218,36 @@ let game= function (user, computer){
  
 //draws 
   if (computer === user){
-   console.log('you tie');
+   return `it's a tie`;
   }
 
       //wins 
       else if (computer === 'scissors' && user === 'rock'){
-               console.log('You win!');
+               return  `you win!`;
                }
       else if (computer === 'rock' && user === 'paper') {
-               console.log('You win!');
+               return  `you win!`;
                }
                
       else if (computer === 'paper' && user === 'scissors') {
-               console.log('You win!');
+               return  `you win!`;
                }
                
       //loses 
                else if (computer === 'paper' && user === 'rock'){
-               console.log(' You lose!');
+                return  `you lose!`;
                }
                
                 else if (computer === 'rock' && user === 'scissors') {
-               console.log(' You lose!');
+                return  `you lose!`;
                }
                
                 else if (computer === 'scissors' && user === 'paper'){
-               console.log(' You lose!');
+            return  `you lose!`;
               }
 }
 
-game(scissors, rock);
+game(scissors, computer);
 
 
 
@@ -298,12 +299,15 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(number){
-  
-  console.log(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`);
-}
+let number = 'number';
 
-annoyingSong(5);
+function annoyingSong(number){
+   console.log(`${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`);
+
+}
+for (let i = number; i > 0; i--){
+  annoyingSong(5);
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
